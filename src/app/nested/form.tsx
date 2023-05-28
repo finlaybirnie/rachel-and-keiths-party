@@ -1,22 +1,37 @@
 "use client";
 
-import { useState } from "react";
-import { save } from "./actions";
+import { FormEvent, useState } from "react";
 import { schema } from "./schema";
 
 export default function Form({ complete }: { complete: boolean }) {
   const [pending, setPending] = useState(false);
-  console.log("render", pending);
 
-  async function action(data: any) {
-    const result = schema.safeParse(data);
-    console.log("action");
+  async function submitHandler(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target as HTMLFormElement);
+    const result = schema.safeParse(formData);
+    console.log("hey");
 
     if (result.success) {
-      console.log("setting");
       setPending(true);
 
-      await save(result.data);
+      const response = await fetch("/nested/handler", {
+        method: "POST",
+        headers: {
+          // "Content-Type": "application/json",
+          // "Content-Type": "application/x-www-form-urlencoded",
+          // "Content-Type": "multipart/form-data",
+        },
+        // body: JSON.stringify(result.data),
+        body: formData,
+      });
+
+      console.log(response);
+
+      if (response.ok) {
+        console.log("Yes boi");
+      }
 
       setPending(false);
     } else {
@@ -25,13 +40,19 @@ export default function Form({ complete }: { complete: boolean }) {
   }
 
   return (
-    <form action={action}>
+    <form className="flex flex-col max-w-lg space-y-4" onSubmit={submitHandler}>
       {complete && <p>Thanks for filling in this form!</p>}
-      <label>
+      <label className="label-text">
         Your email address
-        <input type="text" name="email" />
+        <input className="input" type="text" name="email" />
       </label>
-      <button type="submit">{pending ? "Saving..." : "Save"}</button>
+      <label className="label-text">
+        Your age
+        <input className="input" type="text" name="age" />
+      </label>
+      <button className="btn-primary" type="submit">
+        {pending ? "Saving..." : "Save"}
+      </button>
     </form>
   );
 }
