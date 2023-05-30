@@ -47,8 +47,8 @@ export default function Home() {
             working farm
           </a>{" "}
           in the beautiful Blackdown Hills, run by Evie and Ollie. In the summer
-          it&apos;s also a campsite and we&apos;ve got it to ourselves for the
-          weekend. There are showers and compost loos - luxury.
+          it&apos;s also a campsite with showers and compost loos and we&apos;ve
+          got it to ourselves for the weekend.
         </p>
       </section>
       <section className="flex flex-col space-y-3">

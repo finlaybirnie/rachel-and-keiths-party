@@ -119,17 +119,6 @@ export default function Form({ complete }: { complete: boolean }) {
             <option value="kahlua">Kahlúa, I will bring</option>
           </select>
         </label>
-        <label className="label-text">
-          Packs of sausages
-          <div className="w-1/2">
-            <input
-              className="input"
-              type="number"
-              name="sausageCount"
-              defaultValue="0"
-            />
-          </div>
-        </label>
       </section>
       <section className="flex flex-col space-y-2">
         <label className="label-text">

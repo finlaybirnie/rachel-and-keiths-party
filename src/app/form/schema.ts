@@ -7,6 +7,5 @@ export const schema = zfd.formData({
   childCount: zfd.numeric(z.number()),
   aleConsumption: zfd.numeric(z.number()),
   cocktailContribution: zfd.text(z.string()),
-  sausageCount: zfd.numeric(z.number()),
   comments: zfd.text(z.string().optional()),
 });
