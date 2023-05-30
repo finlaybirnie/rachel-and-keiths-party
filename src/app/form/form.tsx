@@ -19,7 +19,7 @@ export default function Form({ complete }: { complete: boolean }) {
       setValidationErrors(undefined);
       setPending(true);
 
-      const response = await fetch("/nested/handler", {
+      const response = await fetch("/form/handler", {
         method: "POST",
         headers: {
           // "Content-Type": "application/json",
@@ -58,10 +58,10 @@ export default function Form({ complete }: { complete: boolean }) {
             <input
               className="input"
               type="text"
-              name="name"
+              name="names"
               placeholder="Adult human name"
             />
-            {validationErrors?.name?.[index] && (
+            {validationErrors?.names?.[index] && (
               <div className="error-text">Please enter a name</div>
             )}
           </div>
@@ -112,7 +112,7 @@ export default function Form({ complete }: { complete: boolean }) {
         <label className="label-text">
           Cocktail contribution
           <select className="input" name="cocktailContribution">
-            <option>Not my bag, ta</option>
+            <option value="none">Not my bag, ta</option>
             <option value="rum">White Rum, I will bring</option>
             <option value="gin">Gin, I will bring</option>
             <option value="vodka">Vodka, I will bring</option>
