@@ -121,6 +121,7 @@ export default function Form({ complete }: { complete: boolean }) {
         </label>
       </section>
       <section className="flex flex-col space-y-2">
+        <h3 className="text-xl">Any other business</h3>
         <label className="label-text">
           Is there anything else you&apos;d like to request, suggest, contribute
           or comment upon?
