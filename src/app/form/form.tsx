@@ -48,8 +48,8 @@ export default function Form({ complete }: { complete: boolean }) {
   }
 
   return (
-    <form className="flex flex-col max-w-lg space-y-8" onSubmit={submitHandler}>
-      <h1 className="text-4xl">Party Admin</h1>
+    <form className="flex flex-col space-y-8" onSubmit={submitHandler}>
+      <h1 className="text-4xl text-center">Party Admin</h1>
       {complete && <p>Thanks for filling in this form!</p>}
       <section className="flex flex-col space-y-2">
         <h3 className="text-xl">Your Posse</h3>
