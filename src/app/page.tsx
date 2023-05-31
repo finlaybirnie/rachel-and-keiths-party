@@ -35,14 +35,14 @@ export default function Home() {
         <p>
           Saturday evening will be devoted to the pursuit that we’ve all spent
           so much time perfecting over the years - getting a bit wobbly and
-          doing something that falls in broad category of movement known as
+          doing something that falls in the broad category of movement known as
           dancing.
         </p>
       </section>
       <section className="flex flex-col space-y-3">
         <h3 className="text-xl font-bold">The Site</h3>
         <p>
-          Higher Moorlands is{" "}
+          Higher Moorlands is a{" "}
           <a className="link" href="https://highermoorlandsfarm.co.uk">
             working farm
           </a>{" "}
@@ -73,8 +73,8 @@ export default function Home() {
           <a className="link" href="https://highermoorlandsfarm.co.uk/#produce">
             meat from the farm
           </a>
-          . We&apos;ll bring a big sack of charcoal and an extra BBQ or two
-          incase you aren&apos;t able to bring one.
+          . We&apos;ll bring a big sack of charcoal and an extra BBQ or two in
+          case you aren&apos;t able to bring one.
         </p>
         <p>
           <strong>Snacks</strong> - please bring some. Lizi really likes crisps
@@ -112,7 +112,7 @@ export default function Home() {
         <h3 className="text-xl font-bold">Kids</h3>
         <p>
           We like kids and we like you. We want you all to come. As well as the
-          afore mentioned bouncy castle there will be silly games and crisps (if
+          aforementioned bouncy castle there will be silly games and crisps (if
           you bring them). The only caveat is there will be music till 2am on
           Saturday night. We’ll reserve the farthest end of the field for
           families but ultimately it is just one field. Do let us know if
@@ -132,7 +132,7 @@ export default function Home() {
         <h3 className="text-xl font-bold">Cash Contributions</h3>
         <p>
           Some of you have mentioned that you are happy to chip in to help cover
-          costs. That is really helpful thank you. If money is too tight to
+          costs. That is really helpful, thank you. If money is too tight to
           mention for you at the moment, then don’t mention it. Your company is
           the most important thing.
         </p>
@@ -156,7 +156,7 @@ export default function Home() {
         <p>
           Please do get involved. Musical contributions welcome (particularly on
           Friday night) or perhaps you can organise a kids game. Do you have a
-          large BBQ you can bring rr have you thought of something we
+          large BBQ you can bring or have you thought of something we
           haven&apos;t mentioned at all?
         </p>
       </section>
