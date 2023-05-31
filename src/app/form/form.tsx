@@ -55,7 +55,7 @@ export default function Form({ initialComplete }: Props) {
         <div className="flex flex-col space-y-2">
           <p>Thanks for your adminsitrative efforts!</p>
           <p>
-            If you'd like to make a cash contribution,{" "}
+            If you&apos;d like to make a cash contribution,{" "}
             <a
               className="link"
               href="https://monzo.me/samuelgallinjamiesonbarnes"
@@ -118,28 +118,52 @@ export default function Form({ initialComplete }: Props) {
                 />
               </div>
             </label>
+            <label className="label-text">
+              When are you likely to arrive
+              <div className="w-1/2">
+                <select className="input" name="arrivalDay">
+                  <option>Friday</option>
+                  <option>Saturday</option>
+                </select>
+              </div>
+            </label>
           </section>
           <section className="flex flex-col space-y-2">
             <h3 className="text-xl">Food & Drink</h3>
             <label className="label-text">
               Estimated ale consumption
-              <select className="input" name="aleConsumption">
-                <option value="0">Negligable</option>
-                <option value="1">Minimal</option>
-                <option value="2">Moderate</option>
-                <option value="3">High</option>
-                <option value="4">Obscene</option>
-              </select>
+              <div className="w-1/2">
+                <select className="input" name="aleConsumption">
+                  <option value="0">Negligable</option>
+                  <option value="1">Minimal</option>
+                  <option value="2">Moderate</option>
+                  <option value="3">High</option>
+                  <option value="4">Obscene</option>
+                </select>
+              </div>
             </label>
             <label className="label-text">
               Cocktail contribution
-              <select className="input" name="cocktailContribution">
-                <option value="none">Not my bag, ta</option>
-                <option value="rum">White Rum, I will bring</option>
-                <option value="gin">Gin, I will bring</option>
-                <option value="vodka">Vodka, I will bring</option>
-                <option value="kahlua">Kahlúa, I will bring</option>
-              </select>
+              <div className="w-1/2">
+                <select className="input" name="cocktailContribution">
+                  <option value="none">Not our bag, ta</option>
+                  <option value="rum">White Rum, We will bring</option>
+                  <option value="gin">Gin, We will bring</option>
+                  <option value="vodka">Vodka, We will bring</option>
+                  <option value="kahlua">Kahlúa, We will bring</option>
+                </select>
+              </div>
+            </label>
+            <label className="label-text">
+              Rough indication of dietary preference
+              <div className="w-1/2">
+                <select className="input" name="diet">
+                  <option value="0">Strictly vegan</option>
+                  <option value="1">Aspirationally vegan</option>
+                  <option value="2">Vegetarian</option>
+                  <option value="3">Show us the meat</option>
+                </select>
+              </div>
             </label>
           </section>
           <section className="flex flex-col space-y-2">
