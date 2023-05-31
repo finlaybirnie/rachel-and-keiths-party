@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <div className="max-w-3xl mx-auto p-8">{children}</div>
+        <div className="max-w-3xl mx-auto p-4 sm:p-8 md:p-12">{children}</div>
       </body>
     </html>
   );
