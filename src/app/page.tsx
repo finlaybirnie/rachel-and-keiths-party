@@ -143,7 +143,7 @@ export default function Home() {
             className="link"
             href="https://monzo.me/samuelgallinjamiesonbarnes"
           >
-            Here&apos;s the form.
+            Here&apos;s the payment link.
           </a>
         </p>
       </section>
