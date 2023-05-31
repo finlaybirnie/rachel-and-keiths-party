@@ -156,8 +156,8 @@ export default function Home() {
         <p>
           Please do get involved. Musical contributions welcome (particularly on
           Friday night) or perhaps you can organise a kids game. Do you have a
-          large BBQ you can bring rr have you thought of something we haven't
-          mentioned at all?
+          large BBQ you can bring rr have you thought of something we
+          haven&apos;t mentioned at all?
         </p>
       </section>
       <section className="flex flex-col space-y-3">
