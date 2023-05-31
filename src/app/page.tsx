@@ -54,13 +54,13 @@ export default function Home() {
       <section className="flex flex-col space-y-3">
         <h3 className="text-xl font-bold">Food</h3>
         <p>
-          Saturday evening’s grub is sorted but the rest of the time will we be
-          sorting ourselves out. We have some suggestions to make it a little
-          communal:
+          Saturday evening’s grub will be provided but the rest of the time will
+          we be sorting ourselves out. We have some suggestions to make things a
+          little communal:
         </p>
         <p>
           On <strong>Friday evening</strong> we suggest curry. Bring a dish to
-          share and we’ll cook up some rice for us all.
+          share and we’ll cook up some rice for us all. 7pm (ish).
         </p>
         <p>
           <strong>Saturday breakfast</strong> - bring your own fruit, cereal or
@@ -69,9 +69,12 @@ export default function Home() {
         </p>
         <p>
           <strong>Saturday lunch</strong> - let’s BBQ together. Show off your
-          favourite vegetable combo or bring some cash to buy meaty sausages,
-          burgers or made on the farm. We&apos;ll bring a big sack of charcoal
-          and an extra BBQ or two incase aren&apos;t able to bring one.
+          favourite vegetable combo or bring some cash and buy some{" "}
+          <a className="link" href="https://highermoorlandsfarm.co.uk/#produce">
+            meat from the farm
+          </a>
+          . We&apos;ll bring a big sack of charcoal and an extra BBQ or two
+          incase you aren&apos;t able to bring one.
         </p>
         <p>
           <strong>Snacks</strong> - please bring some. Lizi really likes crisps
@@ -79,7 +82,8 @@ export default function Home() {
         </p>
         <p>
           <strong>Saturday dinner</strong> - Evie (of the farm) will be cooking
-          up a lovely tagine for us all.
+          up a lovely supper for us all. Probably a tagine, definitely something
+          with a vegan option.
         </p>
         <p>
           <strong>Sunday breakfast</strong> - rinse and repeat.
@@ -151,8 +155,9 @@ export default function Home() {
         <h3 className="text-xl font-bold">Other Contributions</h3>
         <p>
           Please do get involved. Musical contributions welcome (particularly on
-          Friday night). Or perhaps you can organise a kids game or have a large
-          BBQ your willing to bring and share?
+          Friday night) or perhaps you can organise a kids game. Do you have a
+          large BBQ you can bring rr have you thought of something we haven't
+          mentioned at all?
         </p>
       </section>
       <section className="flex flex-col space-y-3">
