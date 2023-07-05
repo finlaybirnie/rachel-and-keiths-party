@@ -141,14 +141,13 @@ export default function Home() {
           <li>Maybe add £15 to £30 for ale if that’s your bag</li>
           <li>Another £10 or £20 would help cover some site and tent costs.</li>
         </ul>
-        <p>It really is up to you.</p>
+        <p>It really is up to you. Transfers can be made to:</p>
         <p>
-          <a
-            className="link"
-            href="https://monzo.me/samuelgallinjamiesonbarnes"
-          >
-            Here&apos;s the payment link.
-          </a>
+          Sam Barnes
+          <br />
+          04-00-04
+          <br />
+          18309183
         </p>
       </section>
       <section className="flex flex-col space-y-3">

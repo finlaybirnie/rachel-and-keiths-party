@@ -55,14 +55,14 @@ export default function Form({ initialComplete }: Props) {
         <div className="flex flex-col space-y-2">
           <p>Thanks for your adminsitrative efforts!</p>
           <p>
-            If you&apos;d like to make a cash contribution,{" "}
-            <a
-              className="link"
-              href="https://monzo.me/samuelgallinjamiesonbarnes"
-            >
-              here&apos;s the payment link
-            </a>
-            .
+            If you&apos;d like to make a cash contribution, you can transfer to:
+          </p>
+          <p>
+            Sam Barnes
+            <br />
+            04-00-04
+            <br />
+            18309183
           </p>
           <p>
             <button className="link" onClick={() => setComplete(false)}>
