@@ -4,8 +4,8 @@ import { Albert_Sans as Font } from "next/font/google";
 const font = Font({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "40 - 40 Party",
-  description: "Lizi & Sam's 40 - 40 Party",
+  title: "Party",
+  description: "Rachel & Keith's Party",
 };
 
 export default function RootLayout({
